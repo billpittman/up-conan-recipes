@@ -1,0 +1,6 @@
+#!/bin/bash
+
+conan install --build=missing --settings=build_type=Debug .
+cmake --preset conan-debug
+cd build/Debug
+cmake --build . -- -j

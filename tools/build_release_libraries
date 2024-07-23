@@ -1,0 +1,6 @@
+#!/bin/bash
+
+conan create --version 1.6.0 --build=missing up-core-api/developer && \
+conan create --version 1.0.1-rc1 --build=missing up-cpp/developer && \
+conan create --version 1.0.0-rc4 --build=missing zenohc-tmp/prebuilt && \
+conan create --version 1.0.0-rc4 --build=missing zenohcpp-tmp/from-source
